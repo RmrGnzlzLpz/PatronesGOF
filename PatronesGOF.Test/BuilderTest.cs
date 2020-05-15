@@ -8,7 +8,7 @@ namespace Builder.Test
     /*
  * Descripcion del problema:
  * Nuestro sistema trabaja con un objeto complejo, que iremos construyendo poco a poco, de manera que no
- * creamos un new Objeto hasta tener todos los par·metros necesarios listos.
+ * creamos un new Objeto hasta tener todos los par√°metros necesarios listos.
 */
 
     public class BuilderTests
@@ -19,7 +19,7 @@ namespace Builder.Test
         }
 
         [Test(Description = "Crear Cuenta Bancaria")]
-        public void ModificarSuperficial()
+        public void ConstruirCuenta()
         {
             string numero = "1111";
             Cliente cliente = new Cliente
