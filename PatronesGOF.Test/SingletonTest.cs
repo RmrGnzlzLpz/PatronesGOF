@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using Singleton.Entities;
 
-namespace Factory.Test
+namespace Singleton.Test
 {
     /*
  * Descripcion del problema:

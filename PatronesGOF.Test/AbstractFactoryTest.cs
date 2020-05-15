@@ -3,7 +3,7 @@ using AbstractFactory.Factories;
 using NUnit.Framework;
 using AbstractFactory.Entities;
 
-namespace Factory.Test
+namespace AbstractFactory.Test
 {
     public class AbstractFactoryTests
     {

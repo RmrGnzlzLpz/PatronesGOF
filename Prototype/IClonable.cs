@@ -6,6 +6,7 @@ namespace Prototype
 {
     public interface IClonable<T>
     {
-        T Clonar();
+        T ClonarSuperficial();
+        T ClonarProfundo();
     }
 }
