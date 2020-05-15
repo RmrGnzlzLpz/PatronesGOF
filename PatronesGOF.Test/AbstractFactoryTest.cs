@@ -5,6 +5,11 @@ using AbstractFactory.Entities;
 
 namespace AbstractFactory.Test
 {
+    /*
+* Descripcion del problema:
+* Un framework multiplataforma necesita gestionar los elementos de la pantalla para que sean acorde 
+* a la plataforma a ejecutarse.
+*/
     public class AbstractFactoryTests
     {
         IAbstractFactory factory;

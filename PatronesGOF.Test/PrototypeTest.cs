@@ -136,7 +136,7 @@ namespace Prototype.Test
                 clon1.Rocas,
                 clon1.Camara
             };
-            Assert.AreEqual(x, y);
+            Assert.AreNotEqual(x, y);
         }
 
         [Test(Description = "Modificamos el clon, y el original no se ve afectado")]
