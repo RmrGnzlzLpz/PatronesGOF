@@ -26,17 +26,20 @@ namespace Builder.Test
             {
                 PrimerNombre = "Ramiro", SegundoNombre = "Enrique", PrimerApellido = "Gonzalez", SegundoApellido = "Lopez"
             };
+            // Construimos el builder, e incluimos 2 parámetros que usaremos para construir la cuenta.
             CuentaBancariaBuilder builder = new CuentaBancariaBuilder(numero).AsignarCliente(cliente);
             
             TipoCuenta tipo = TipoCuenta.Ahorro;
             double balance = 0.0;
+            // Obtenemos 2 nuevos parámetros y los guardamos en el Builder.
             builder = builder.AsignarTipo(tipo).AsignarBalance(balance);
 
             double tasa = 10;
             builder = builder.AsignarInteres(tasa);
-
+            // Luego de tener todos los parámetros, construimos la Cuenta.
             CuentaBancaria cuenta = builder.Build();
 
+            // Testeamos todos los parametros enviados, de manera que correspondan a las propiedades del objeto construido.
             Assert.AreEqual(cuenta.Numero, numero);
             Assert.AreEqual(cuenta.Cliente, cliente);
             Assert.AreEqual(cuenta.Tipo, tipo);

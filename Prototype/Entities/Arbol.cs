@@ -10,7 +10,11 @@ namespace Prototype.Entities
         public TipoArbol Tipo { get; set; }
         public Arbol ClonarProfundo()
         {
-            return ClonarSuperficial();
+            return new Arbol
+            {
+                Grosor = Grosor,
+                Tipo = Tipo
+            };
         }
 
         public Arbol ClonarSuperficial()

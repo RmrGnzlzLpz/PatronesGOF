@@ -117,7 +117,7 @@ namespace Prototype.Test
         [Test(Description = "Clonamos un objeto de manera profunda, incluyendo sus hijos")]
         public void ClonarProfundo()
         {
-            var clon1 = predeterminado1.ClonarSuperficial();
+            var clon1 = predeterminado1.ClonarProfundo();
             var x = new
             {
                 predeterminado1.Ancho,

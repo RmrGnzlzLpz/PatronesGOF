@@ -14,14 +14,15 @@ namespace Prototype.Entities
         {
             return new Camara
             {
-                X = this.X,
-                Y = this.Y,
-                Z = this.Z
+                X = X, Y = Y, Z = Z
             };
         }
         public Camara ClonarProfundo()
         {
-            return ClonarSuperficial();
+            return new Camara
+            {
+                X = X, Y = Y, Z = Z
+            };
         }
     }
 }
