@@ -114,7 +114,7 @@ namespace Prototype.Test
             Assert.AreEqual(clon2.Arboles, predeterminado2.Arboles);
         }
 
-        [Test(Description = "Clonamos los objetos de manera profunda, incluyendo sus hijos")]
+        [Test(Description = "Clonamos un objeto de manera profunda, incluyendo sus hijos")]
         public void ClonarProfundo()
         {
             var clon1 = predeterminado1.ClonarSuperficial();
